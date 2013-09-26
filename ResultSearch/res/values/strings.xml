@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ResultSearch</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Image">Splash Screen</string>
+    <string name="ac1_labl1">Select Your Degree :</string>
+    <string name="ac1_labl2">Select Your Semester :</string>
+    <string name="ac1_btn1">Submit</string>
+    <string name="ac1_btn2">Cancle</string>
+    <string name="ac2_spinner1">Select Your Degree </string>
+    <string name="ac2_spinner2">Select Your Semester </string>
+    <string name="ac3_lbl1">Enter Your Enrollment No : </string>
+    <string name="ac3_button1">Search </string>
+    <string name="ac3_button2">Back </string>
+    <string name="ac3_button3">Exit </string>
+
+    <string-array name="degree">
+        <item>MCA</item>
+        <item>MSc-IT</item>
+        <item>PGDCA</item>
+        <item>BE</item>
+        <item>MBA</item>
+    </string-array>
+    <string-array name="semester">
+        <item>SEM - 1</item>
+        <item>SEM - 2</item>
+        <item>SEM - 3</item>
+        <item>SEM - 4</item>
+        <item>SEM - 5</item>
+        <item>SEM - 6</item>
+    </string-array>
+    <string-array name="rajan">
+        <item>MC - 64</item>
+        <item>SE - 45</item>
+        <item>NS - 47</item>
+        <item>SEC - 64</item>
+    </string-array>
+
+</resources>
