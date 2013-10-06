@@ -2,8 +2,11 @@ package com.android.my.database;
 
 import android.app.Activity;
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -22,6 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	DBHelper helper;
 	SQLiteDatabase db;
 	ListView disp;
+	public boolean NetStatus = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +77,10 @@ public class MainActivity extends Activity implements OnClickListener {
 					Toast.LENGTH_LONG).show();
 
 			fetchdata();
+			NetStatus = isNetworkAvailable();
+			if (NetStatus == true)
+				Toast.makeText(MainActivity.this, "NETWORK ACCESS IS ENABLED",
+						Toast.LENGTH_LONG).show();
 
 		}
 
@@ -84,6 +92,21 @@ public class MainActivity extends Activity implements OnClickListener {
 		txtDesig.setText("");
 		txtSalary.setText("");
 
+	}
+
+	public boolean isNetworkAvailable() {
+		// Get Connectivity Manager class object from Systems Service
+		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+		// Get Network Info from connectivity Manager
+		NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+
+		// if no network is available networkInfo will be null
+		// otherwise check if we are connected
+		if (networkInfo != null && networkInfo.isConnected()) {
+			return true;
+		}
+		return false;
 	}
 
 }
