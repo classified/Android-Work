@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Employee Details</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="txt1Hint">Enter Employee Name</string>
+    <string name="txt2Hint">Enter Employee Graduation</string>
+    <string name="txt3Hint">Enter Employee Salary</string>
+    <string name="btn1Hint">Add Employee</string>
+    <string name="btn2Hint">Update</string>
+    <string name="btn3Hint">Delete</string>
+    <string name="Login">Welcome to Employee Manager !</string>
+    <string name="Login1">Login</string>
+    <string name="Login2">Exit</string>
+
+</resources>

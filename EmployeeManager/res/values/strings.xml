@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"EmployeeManager "</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Welcome to Employee Manager!</string>
+	<string name="btnlogin">Login</string>
+	<string name="btnexit">Exit</string>
+	<string name="txtName">Enter Employee Name</string>
+	<string name="txtDesig">Enter Employee Designation </string>
+	<string name="txtSalary">Enter Employee Salary</string>
+	<string name="btnName">Add Employee</string>
+	<string name="btnUpdate">Update </string>
+	<string name="btnDelete">Delete</string>
+	<string name="reg">Register</string>
+</resources>
